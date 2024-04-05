@@ -7,7 +7,8 @@ public class DrawGizmos : MonoBehaviour
 
     private void OnDrawGizmos()
     {
-        if (Points.Length == 0) {  return; }
+        if (Points.Length == 0) 
+          return; 
 
         foreach (var point in Points)
         {

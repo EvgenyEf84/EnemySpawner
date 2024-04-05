@@ -597,7 +597,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d27382eeaa421ee4890f36e1d4dd3b32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _prefab: {fileID: 5636501165883913206, guid: 782a19ea30662534f92faa4f9b646b3a, type: 3}
+  _prefab: {fileID: -281654375014787316, guid: 782a19ea30662534f92faa4f9b646b3a, type: 3}
   _delay: 2
   _spawnPoints:
   - {fileID: 1084723591}
