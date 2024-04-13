@@ -2,9 +2,9 @@ using UnityEngine;
 
 public class DrawGizmos : MonoBehaviour
 {
-    public Transform[] Points;
-    public Color GizmosColor;
-    public float Radius;
+    [SerializeField] private Transform[] Points;
+    [SerializeField] private Color GizmosColor;
+    [SerializeField] private float Radius;
 
     private void OnDrawGizmos()
     {

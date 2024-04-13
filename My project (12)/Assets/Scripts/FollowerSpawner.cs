@@ -9,7 +9,7 @@ public class FollowerSpawner : MonoBehaviour
     [SerializeField] private List<Transform> _spawnPoints;
     [SerializeField] public Transform _target;
 
-    void Start()
+    private void Start()
     {
         _spawnPoints = new List<Transform>(_spawnPoints);
         StartCoroutine(SpawnEnemies());
@@ -24,7 +24,7 @@ public class FollowerSpawner : MonoBehaviour
             yield return wait;
             var spawnPoint = Random.Range(0, _spawnPoints.Count);
             Enemy enemy= Instantiate(_prefab, _spawnPoints[spawnPoint].transform.position, Quaternion.identity);
-            enemy.SetTarget(_target);            
+            enemy.Init(_target);            
         }
     }
 }
